@@ -1,0 +1,15 @@
+{
+    "name": "osc242/bimoko",
+    "description": "Bimoko podcast static website, made using Jigsaw",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Adnan RIHAN",
+            "email": "adnan@rihan.cg"
+        }
+    ],
+    "require": {
+        "tightenco/jigsaw": "^1.3"
+    }
+}
