@@ -4,7 +4,7 @@
             class="absolute md:relative w-full justify-end bg-white left-0 top-0 z-10 mt-7 md:mt-0 px-4 md:px-0"
             :class="{'hidden md:flex': ! searching}"
         >
-            <label for="search" class="hidden">Search</label>
+            <label for="search" class="hidden">Recherche</label>
 
             <input
                 id="search"
@@ -14,7 +14,7 @@
                 :class="{ 'transition-border': query }"
                 autocomplete="off"
                 name="search"
-                placeholder="Search"
+                placeholder="Recherche"
                 type="text"
                 @keyup.esc="reset"
                 @blur="reset"
@@ -47,7 +47,7 @@
                             v-if="! results.length"
                             class="bg-white w-full hover:bg-blue-100 border-b border-blue-400 rounded-b-lg shadow cursor-pointer p-4"
                         >
-                            <p class="my-0">No results for <strong>{{ query }}</strong></p>
+                            <p class="my-0">Aucun résultat pour <strong>{{ query }}</strong></p>
                         </div>
                     </div>
                 </div>
