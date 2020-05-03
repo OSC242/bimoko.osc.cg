@@ -4,6 +4,7 @@ section: content
 title: Mailchimp Newsletters
 date: 2018-11-21
 categories: [feature]
+archived: true
 description: Mailchimp newsletter signups, just add a url.
 cover_image: /assets/img/post-cover-image-1.png
 ---
