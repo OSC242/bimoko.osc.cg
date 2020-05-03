@@ -1,5 +1,7 @@
 <?php
 
+use Carbon\Carbon;
+
 // @var $container \Illuminate\Container\Container
 // @var $events \TightenCo\Jigsaw\Events\EventBus
 
@@ -13,6 +15,10 @@
  *     // Your code here
  * });
  */
+
+date_default_timezone_set('Africa/Brazzaville');
+setlocale(LC_TIME, ['fr_FR.UTF-8', 'fr_FR']);
+Carbon::setLocale('fr');
 
 $events->afterBuild(App\Listeners\GenerateSitemap::class);
 $events->afterBuild(App\Listeners\GenerateIndex::class);

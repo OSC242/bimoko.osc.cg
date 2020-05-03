@@ -1,5 +1,6 @@
 <?php
 
+use Carbon\Carbon;
 use Illuminate\Support\Str;
 
 return [
@@ -29,7 +30,7 @@ return [
 
     // helpers
     'getDate' => function ($page) {
-        return Datetime::createFromFormat('U', $page->date);
+        return Carbon::createFromFormat('U', $page->date);
     },
     'getExcerpt' => function ($page, $length = 255) {
         if ($page->excerpt) {
