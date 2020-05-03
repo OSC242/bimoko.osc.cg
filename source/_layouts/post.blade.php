@@ -26,6 +26,18 @@
         @endforeach
     @endif
 
+    @if ($page->sounderEpId)
+        <!-- Sounder Embedded Player -->
+        <div class="mt-8">
+            @include('_components.sounder-player', [
+                'episodeId' => $page->sounderEpId,
+            ])
+        </div>
+        <hr class="my-10">
+        <!-- /Sounder Embedded Player -->
+    @endif
+
+
     <div class="border-b border-blue-200 mb-10 pb-4" v-pre>
         @yield('content')
     </div>

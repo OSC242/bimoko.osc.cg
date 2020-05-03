@@ -19,7 +19,8 @@
         <title>{{ $page->title ?  $page->title . ' | ' : '' }}{{ $page->siteName }}</title>
 
         <link rel="home" href="{{ $page->baseUrl }}">
-        <link href="/blog/feed.atom" type="application/atom+xml" rel="alternate" title="{{ $page->siteName }} Atom Feed">
+        <link rel="alternate" type="application/atom+xml" href="/blog/feed.atom" title="{{ $page->siteName }} Atom Feed">
+        <link rel="alternate" type="application/rss+xml" href="{{ $page->sounder->rss }}" title="{{ $page->siteName }} Podcast Feed">
 
         <!-- Favicons -->
         <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
