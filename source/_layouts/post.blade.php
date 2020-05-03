@@ -59,4 +59,14 @@
             @endif
         </div>
     </nav>
+
+    <!-- Disqus -->
+    <div class="mt-20 italic">
+    @if ($page->disqusId && $page->baseUrl)
+        @include('_components.disqus', ['identifier' => $page->disqusId])
+    @else
+        <p class="text-center">Les commentaires sont désactivés sur cette page</p>
+    @endif
+    </div>
+    <!-- /Disqus -->
 @endsection
