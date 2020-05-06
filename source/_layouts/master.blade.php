@@ -15,15 +15,15 @@
     @if ($page->image)
         <meta property="og:image" content="{{ $page->image }}" />
     @endif
-        <meta property="og:image" content="/assets/img/logo-300px.jpg" />
+        <meta property="og:image" content="{{ $page->baseUrl }}/assets/img/logo-300px.jpg" />
         <meta property="og:image:width" content="300" />
         <meta property="og:image:height" content="300" />
         <meta property="og:image:type" content="image/jpeg" />
-        <meta property="og:image" content="/assets/img/logo-100px.png" />
+        <meta property="og:image" content="{{ $page->baseUrl }}/assets/img/logo-100px.png" />
         <meta property="og:image:width" content="100" />
         <meta property="og:image:height" content="100" />
         <meta property="og:image:type" content="image/png" />
-        <meta property="og:image" content="/assets/img/logo_podcast.svg" />
+        <meta property="og:image" content="{{ $page->baseUrl }}/assets/img/logo.svg" />
         <meta property="og:image:type" content="image/svg+xml" />
 
 
