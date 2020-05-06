@@ -8,7 +8,7 @@ return [
     'production' => false,
     'siteAuthor' => 'Adnan RIHAN <adnan@osc.cg>',
     'siteLocale' => 'fr_FR',
-    'siteName' => 'Bimiko Podcast',
+    'siteName' => 'Bimoko Podcast',
     'siteDescription' => "Le podcast congolais qui démystifie l'actualité tech",
     'contactFormEndpoint' => 'https://formspree.io/xrgygbno',
 
