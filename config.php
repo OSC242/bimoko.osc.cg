@@ -22,7 +22,7 @@ return [
         'accountId' => 'c6264237608448c18c5a49d5bc4057f7',
         'channelId' => 'aLn9D',
         'channelKey' => '-',
-        'channelUrl' => 'https://osc242.sounder.fm/show/bimoko-osc242',
+        'channelUrl' => 'https://osc242.sounder.fm/show/bimoko',
         'rss' => 'https://osc242.sounder.fm/show/aLn9D/rss.xml',
     ],
 
