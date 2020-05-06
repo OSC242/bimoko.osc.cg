@@ -12,6 +12,12 @@ return [
     'siteDescription' => "Le podcast congolais qui démystifie l'actualité tech",
     'contactFormEndpoint' => 'https://formspree.io/xrgygbno',
 
+    'mailchimp' => [
+        'action' => 'https://osc.us8.list-manage.com/subscribe/post',
+        'userId' => 'ccb14ad907f44c68bed2be64a',
+        'listId' => 'a180f85c4e',
+    ],
+
     'sounder' => [
         'accountId' => 'c6264237608448c18c5a49d5bc4057f7',
         'channelId' => 'aLn9D',
