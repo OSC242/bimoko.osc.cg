@@ -12,6 +12,10 @@ return [
     'siteDescription' => "Le podcast congolais qui démystifie l'actualité tech",
     'contactFormEndpoint' => 'https://formspree.io/xrgygbno',
 
+    'google' => [
+        'analyticsId' => 'UA-165831877-1',
+    ],
+
     'mailchimp' => [
         'action' => 'https://osc.us8.list-manage.com/subscribe/post',
         'userId' => 'ccb14ad907f44c68bed2be64a',
@@ -32,6 +36,9 @@ return [
             'author' => 'Adnan R.', // Default author, if not provided in a post
             'sort' => '-date',
             'path' => 'blog/{filename}',
+            'filter' => function ($page) {
+                return $page->archived !== true;
+            },
             'type' => 'article',
             'og' => function ($page) {
                 $ogs = [
