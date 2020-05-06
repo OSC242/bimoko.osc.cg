@@ -1,15 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr" prefix="og: http://ogp.me/ns#">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="description" content="{{ $page->meta_description ?? $page->siteDescription }}">
+        <meta name="description" content="{{ $page->description ?? $page->siteDescription }}">
 
-        <meta property="og:title" content="{{ $page->title ?  $page->title . ' | ' : '' }}{{ $page->siteName }}"/>
-        <meta property="og:type" content="website" />
         <meta property="og:url" content="{{ $page->getUrl() }}"/>
-        <meta property="og:description" content="{{ $page->siteDescription }}" />
+        <meta property="og:type" content="{{ $page->type ?? 'website' }}" />
+        <meta property="og:title" content="{{ $page->title ? $page->title . ' | ' : '' }}{{ $page->siteName }}"/>
+        <meta property="og:description" content="{{ $page->description ?? $page->siteDescription }}" />
+        <meta property="og:locale" content="{{ $page->locale ?? $page->siteLocale }}" />
+
+    @if ($page->image)
+        <meta property="og:image" content="{{ $page->image }}" />
+    @endif
+        <meta property="og:image" content="/assets/img/logo-300px.jpg" />
+        <meta property="og:image:width" content="300" />
+        <meta property="og:image:height" content="300" />
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image" content="/assets/img/logo-100px.png" />
+        <meta property="og:image:width" content="100" />
+        <meta property="og:image:height" content="100" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image" content="/assets/img/logo_podcast.svg" />
+        <meta property="og:image:type" content="image/svg+xml" />
+
+
+    @foreach (collect($page->og ? $page->og() : [])->mergeRecursive($page->subOg) as $propArray)
+        <meta property="og:{{ $propArray[0] }}" content="{{ $propArray[1] }}" />
+    @endforeach
 
         <!-- Favicons -->
         <meta name="msapplication-TileColor" content="#ffffff">

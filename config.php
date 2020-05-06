@@ -6,6 +6,7 @@ use Illuminate\Support\Str;
 return [
     'baseUrl' => '',
     'production' => false,
+    'siteLocale' => 'fr_FR',
     'siteName' => 'Bimiko Podcast',
     'siteDescription' => "Le podcast congolais qui démystifie l'actualité tech",
     'siteAuthor' => 'Adnan RIHAN <adnan@osc.cg>',
@@ -25,6 +26,24 @@ return [
             'author' => 'Adnan R.', // Default author, if not provided in a post
             'sort' => '-date',
             'path' => 'blog/{filename}',
+            'type' => 'article',
+            'og' => function ($page) {
+                $ogs = [
+                    [
+                        'article:published_time',
+                        $page->getDate()->toDateString(),
+                    ],
+                ];
+
+                foreach ($page->categories as $category) {
+                    $ogs[] = [
+                        'article:tag',
+                        $category,
+                    ];
+                }
+
+                return $ogs;
+            },
             'inCategory' => function ($page, $category) {
                 return in_array($category, $page->categories, true);
             },
