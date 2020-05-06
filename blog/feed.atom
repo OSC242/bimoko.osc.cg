@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>Bimiko Podcast</title>
+    <link href="https://podcast.osc.cg" />
+    <link type="application/atom+xml" rel="self" href="https://podcast.osc.cg/blog/feed.atom" />
+    <updated>2020-05-06T14:37:20+01:00</updated>
+    <id>https://podcast.osc.cg/blog/feed.atom</id>
+    <author>
+        <name>Adnan RIHAN &lt;adnan@osc.cg&gt;</name>
+    </author>
+                <entry>
+    <id>https://podcast.osc.cg/blog/2020-05-06_episode-0-fous-rires-et-presentations</id>
+    <link type="text/html" rel="alternate" href="https://podcast.osc.cg/blog/2020-05-06_episode-0-fous-rires-et-presentations" />
+    <title>Épisode 0: Fous Rires et Présentations</title>
+    <published>2020-05-06T01:00:00+01:00</published>
+    <updated>2020-05-06T01:00:00+01:00</updated>
+    <author>
+        <name>Adnan R.</name>
+    </author>
+    <summary type="html">Cet article marque l’enregistrement de l&#039;épisode 0 de notre émission, les présentations du groupe, du projet, des animateurs…...</summary>
+    <content type="html"><![CDATA[
+        <p>Cet article marque l’enregistrement de l'épisode 0 de notre émission, les présentations du groupe, du projet, des animateurs…<!-- more --></p>
+<blockquote>
+<p>Ne soyez pas étonnés, l’épisode commence par un fou rire de Serge. Il s’est moqué de mon jingle, alors je me suis vengé en le mettant au début de l’épisode. Amusez-vous bien!</p>
+</blockquote>
+<h2>OSC242</h2>
+<p>OSC242 (abbréviation de <em>OpenSource Community Congo</em>) est une association de fait, congolaise, et œuvre pour la promotion de la culture Open Source en République du Congo et dans les pays voisins.</p>
+<h2>Bimoko Podcast</h2>
+<p>L’émission <strong>Bimoko</strong> (« <em>On en parle</em> » en français) a pour but de vulgariser et démystifier les nouvelles technologies en rapport avec l’actualité.</p>
+<p>Dans chaque épisode, nous prenons un point technique tirée de l’actualité, et nous en parlons le plus simplement possible, seul, à 2 ou avec des invités.</p>
+<p>Il n’est pas nécessaire d’écouter les épisodes dans l’ordre.</p>
+<h2>Les animateurs</h2>
+<p>Le projet est né de l’initiative de 2 membres, <a href="https://adnan.rihan.cg">Adnan RIHAN</a> et <a href="https://www.facebook.com/sergeparfait.goma">Serge-Parfait GOMA</a> qui animéront également l’émission.</p>    ]]></content>
+</entry>
+    </feed>
