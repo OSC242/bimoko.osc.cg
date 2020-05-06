@@ -1,17 +1,20 @@
 ---
 extends: _layouts.post
 section: content
-title: 'Épisode 0: Présentations'
-date: 2020-05-01
-description: Présentations de l’émission et de l’équipe
+title: 'Épisode 0: Fous Rires et Présentations'
+date: &date 2020-05-06
+description: Épisode 0 de Bimoko Podcast, fous rires et présentations
 featured: true
 categories: [podcast]
-sounderEpId: Bzp97
-disqusId: 20200501
+sounderEpId: Z736z
+disqusId: *date
+subOg:
+  - [music:duration, 752]
 ---
 
-
 Cet article marque l’enregistrement de l'épisode 0 de notre émission, les présentations du groupe, du projet, des animateurs…<!-- more -->
+
+> Ne soyez pas étonnés, l’épisode commence par un fou rire de Serge. Il s’est moqué de mon jingle, alors je me suis vengé en le mettant au début de l’épisode. Amusez-vous bien!
 
 
 ## OSC242
