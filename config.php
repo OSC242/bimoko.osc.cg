@@ -6,10 +6,10 @@ use Illuminate\Support\Str;
 return [
     'baseUrl' => '',
     'production' => false,
+    'siteAuthor' => 'Adnan RIHAN <adnan@osc.cg>',
     'siteLocale' => 'fr_FR',
     'siteName' => 'Bimiko Podcast',
     'siteDescription' => "Le podcast congolais qui démystifie l'actualité tech",
-    'siteAuthor' => 'Adnan RIHAN <adnan@osc.cg>',
     'contactFormEndpoint' => 'https://formspree.io/xrgygbno',
 
     'sounder' => [
@@ -86,7 +86,7 @@ return [
         }
 
         return strlen($cleaned) > $length
-            ? preg_replace('/\s+?(\S+)?$/', '', $truncated) . '...'
+            ? preg_replace('/\s+?(\S+)?$/', '', $truncated) . '…'
             : $cleaned;
     },
     'isActive' => function ($page, $path) {
