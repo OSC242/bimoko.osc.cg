@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
  <url>
-  <loc>http://bimoko.osc.cg/blog/feed.atom</loc>
-  <lastmod>2020-05-06T15:00:36+01:00</lastmod>
+  <loc>http://bimoko.osc.cg/blog/categories/podcast</loc>
+  <lastmod>2020-05-06T15:11:36+01:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>http://bimoko.osc.cg/blog/categories</loc>
-  <lastmod>2020-05-06T15:00:36+01:00</lastmod>
+  <lastmod>2020-05-06T15:11:36+01:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
-  <loc>http://bimoko.osc.cg/blog</loc>
-  <lastmod>2020-05-06T15:00:36+01:00</lastmod>
-  <changefreq>daily</changefreq>
- </url>
- <url>
-  <loc>http://bimoko.osc.cg/blog/categories/podcast</loc>
-  <lastmod>2020-05-06T15:00:36+01:00</lastmod>
-  <changefreq>daily</changefreq>
- </url>
- <url>
-  <loc>http://bimoko.osc.cg</loc>
-  <lastmod>2020-05-06T15:00:36+01:00</lastmod>
-  <changefreq>daily</changefreq>
- </url>
- <url>
-  <loc>http://bimoko.osc.cg/blog/2020-05-06_episode-0-fous-rires-et-presentations</loc>
-  <lastmod>2020-05-06T15:00:36+01:00</lastmod>
+  <loc>http://bimoko.osc.cg/blog/feed.atom</loc>
+  <lastmod>2020-05-06T15:11:36+01:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>http://bimoko.osc.cg/contact</loc>
-  <lastmod>2020-05-06T15:00:36+01:00</lastmod>
+  <lastmod>2020-05-06T15:11:36+01:00</lastmod>
+  <changefreq>daily</changefreq>
+ </url>
+ <url>
+  <loc>http://bimoko.osc.cg/blog</loc>
+  <lastmod>2020-05-06T15:11:36+01:00</lastmod>
+  <changefreq>daily</changefreq>
+ </url>
+ <url>
+  <loc>http://bimoko.osc.cg</loc>
+  <lastmod>2020-05-06T15:11:36+01:00</lastmod>
+  <changefreq>daily</changefreq>
+ </url>
+ <url>
+  <loc>http://bimoko.osc.cg/blog/2020-05-06_episode-0-fous-rires-et-presentations</loc>
+  <lastmod>2020-05-06T15:11:36+01:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
 </urlset>
