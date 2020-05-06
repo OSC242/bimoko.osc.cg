@@ -25,12 +25,15 @@ return [
             'author' => 'Adnan R.', // Default author, if not provided in a post
             'sort' => '-date',
             'path' => 'blog/{filename}',
+            'inCategory' => function ($page, $category) {
+                return in_array($category, $page->categories, true);
+            },
         ],
         'categories' => [
-            'path' => '/blog/categories/{filename}',
+            'path' => 'blog/categories/{filename}',
             'posts' => function ($page, $allPosts) {
                 return $allPosts->filter(function ($post) use ($page) {
-                    return $post->categories ? in_array($page->getFilename(), $post->categories, true) : false;
+                    return $post->categories ? in_array($page->name, $post->categories, true) : false;
                 });
             },
         ],

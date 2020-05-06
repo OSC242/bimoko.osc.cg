@@ -4,6 +4,9 @@
         Blog
     </a>
 
+    <a title="{{ $page->siteName }} Catégories" href="/blog/categories"
+        class="ml-6 text-gray-700 hover:text-blue-600 {{ $page->isActive('/blog/categories') ? 'active text-blue-600' : '' }}">
+        Catégories
     </a>
 
     <a title="{{ $page->siteName }} Contact" href="/contact"

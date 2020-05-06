@@ -9,6 +9,10 @@
         </li>
         <li class="pl-4">
             <a
+                title="{{ $page->siteName }} Catégories"
+                href="/blog/categories"
+                class="nav-menu__item hover:text-blue-500 {{ $page->isActive('/blog/categories') ? 'active text-blue' : '' }}"
+            >Catégories</a>
         </li>
         <li class="pl-4">
             <a
