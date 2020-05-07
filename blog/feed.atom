@@ -1,16 +1,16 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>Bimoko Podcast</title>
-    <link href="http://bimoko.osc.cg" />
-    <link type="application/atom+xml" rel="self" href="http://bimoko.osc.cg/blog/feed.atom" />
-    <updated>2020-05-07T11:45:00+01:00</updated>
-    <id>http://bimoko.osc.cg/blog/feed.atom</id>
+    <link href="https://bimoko.osc.cg" />
+    <link type="application/atom+xml" rel="self" href="https://bimoko.osc.cg/blog/feed.atom" />
+    <updated>2020-05-07T13:16:15+01:00</updated>
+    <id>https://bimoko.osc.cg/blog/feed.atom</id>
     <author>
         <name>Adnan RIHAN &lt;adnan@osc.cg&gt;</name>
     </author>
                 <entry>
-    <id>http://bimoko.osc.cg/blog/2020-05-06_episode-0-fous-rires-et-presentations</id>
-    <link type="text/html" rel="alternate" href="http://bimoko.osc.cg/blog/2020-05-06_episode-0-fous-rires-et-presentations" />
+    <id>https://bimoko.osc.cg/blog/2020-05-06_episode-0-fous-rires-et-presentations</id>
+    <link type="text/html" rel="alternate" href="https://bimoko.osc.cg/blog/2020-05-06_episode-0-fous-rires-et-presentations" />
     <title>Épisode 0: Fous Rires et Présentations</title>
     <published>2020-05-06T01:00:00+01:00</published>
     <updated>2020-05-06T01:00:00+01:00</updated>
