@@ -1,6 +1,6 @@
 <?php
 
 return [
-    'baseUrl' => 'http://bimoko.osc.cg',
+    'baseUrl' => 'https://bimoko.osc.cg',
     'production' => true,
 ];
