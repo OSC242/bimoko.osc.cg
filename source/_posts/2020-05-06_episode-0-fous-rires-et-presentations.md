@@ -6,7 +6,7 @@ date: &date 2020-05-06
 description: Épisode 0 de Bimoko Podcast, fous rires et présentations
 featured: true
 categories: [podcast]
-sounderEpId: Z736z
+sounderEpId: AzE9z
 disqusId: *date
 subOg:
   - [music:duration, 752]
