@@ -22,6 +22,17 @@ return [
         'listId' => 'a180f85c4e',
     ],
 
+    'podcast' => [
+        'apple' => [
+            'url' => 'https://podcasts.apple.com/fr/podcast/bimoko-podcast-osc242/id1511860720',
+        ],
+        'spotify' => [
+            'showUrl' => 'https://open.spotify.com/show',
+            'episodeUrl' => 'https://open.spotify.com/episode',
+            'id' => '32jazNvnvAaYDMBGUk5cUY',
+        ]
+    ],
+
     'sounder' => [
         'accountId' => 'c6264237608448c18c5a49d5bc4057f7',
         'channelId' => 'aLn9D',

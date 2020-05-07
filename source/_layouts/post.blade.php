@@ -30,6 +30,29 @@
         <!-- /Sounder Embedded Player -->
     @endif
 
+    <!-- Podcasts link -->
+    @if ($page->appleEpId)
+        <a
+            href="{{ $page->podcast->apple->url }}?i={{ $page->appleEpId }}"
+            title="Écouter l’épisode sur Apple Podcasts"
+            class="inline-block px-3"
+            target="_blank"
+        >
+            <img src="/assets/img/badge-apple-podcasts.svg">
+        </a>
+    @endif
+
+    @if ($page->spotifyEpId)
+        <a
+            href="{{ $page->podcast->spotify->episodeUrl }}/{{ $page->spotifyEpId }}"
+            title="Écouter l’épisode sur Spotify"
+            class="inline-block px-3"
+            target="_blank"
+        >
+            <img src="/assets/img/badge-spotify-podcasts.svg">
+        </a>
+    @endif
+    <!-- /Podcasts link -->
 
     <div class="border-b border-blue-200 mb-10 pb-4" v-pre>
         @yield('content')
