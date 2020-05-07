@@ -19,40 +19,41 @@
         @endforeach
     @endif
 
-    @if ($page->sounderEpId)
-        <!-- Sounder Embedded Player -->
+    @if (in_array('podcast', $page->categories))
         <div class="mt-8">
+            <!-- Sounder Embedded Player -->
             @include('_components.sounder-player', [
-                'episodeId' => $page->sounderEpId,
+                'episodeId' => $page->episode['sounderId'],
             ])
+            <!-- /Sounder Embedded Player -->
         </div>
-        <hr class="my-10">
-        <!-- /Sounder Embedded Player -->
+
+        <div class="mt-6">
+            <!-- Apple Podcasts badge -->
+            <a
+                href="{{ $page->podcast->apple->url }}?i={{ $page->episode['appleId'] }}"
+                title="Écouter l’épisode sur Apple Podcasts"
+                class="inline-block pr-3"
+                target="_blank"
+            >
+                <img src="/assets/img/badge-apple-podcasts.svg">
+            </a>
+            <!-- /Apple Podcasts badge -->
+
+            <!-- Spotify badge -->
+            <a
+                href="{{ $page->podcast->spotify->episodeUrl }}/{{ $page->episode['spotifyId'] }}"
+                title="Écouter l’épisode sur Spotify"
+                class="inline-block px-3"
+                target="_blank"
+            >
+                <img src="/assets/img/badge-spotify-podcasts.svg">
+            </a>
+            <!-- Spotify badge -->
+        </div>
     @endif
 
-    <!-- Podcasts link -->
-    @if ($page->appleEpId)
-        <a
-            href="{{ $page->podcast->apple->url }}?i={{ $page->appleEpId }}"
-            title="Écouter l’épisode sur Apple Podcasts"
-            class="inline-block px-3"
-            target="_blank"
-        >
-            <img src="/assets/img/badge-apple-podcasts.svg">
-        </a>
-    @endif
-
-    @if ($page->spotifyEpId)
-        <a
-            href="{{ $page->podcast->spotify->episodeUrl }}/{{ $page->spotifyEpId }}"
-            title="Écouter l’épisode sur Spotify"
-            class="inline-block px-3"
-            target="_blank"
-        >
-            <img src="/assets/img/badge-spotify-podcasts.svg">
-        </a>
-    @endif
-    <!-- /Podcasts link -->
+    <hr class="my-8">
 
     <div class="border-b border-blue-200 mb-10 pb-4" v-pre>
         @yield('content')

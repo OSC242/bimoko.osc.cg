@@ -9,9 +9,10 @@ categories: [podcast]
 disqusId: *date
 subOg:
   - [music:duration, 752]
-appleEpId: 1000473715933
-sounderEpId: AzE9z
-spotifyEpId: 7gCUtDQ1AQdngGOqvGNimv
+episode:
+  appleId: 1000473715933
+  sounderId: AzE9z
+  spotifyId: 7gCUtDQ1AQdngGOqvGNimv
 ---
 
 Cet article marque l’enregistrement de l'épisode 0 de notre émission, les présentations du groupe, du projet, des animateurs…<!-- more -->
