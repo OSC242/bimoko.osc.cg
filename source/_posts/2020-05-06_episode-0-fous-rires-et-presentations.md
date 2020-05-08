@@ -10,9 +10,9 @@ disqusId: *date
 subOg:
   - [music:duration, 752]
 episode:
-  appleId: 1000473715933
-  sounderId: AzE9z
-  spotifyId: 7gCUtDQ1AQdngGOqvGNimv
+  appleId: 1000474012684
+  sounderId: aLoVD
+  spotifyId: 20u4WkAq4FQQwvUK73BYtz
 ---
 
 Cet article marque l’enregistrement de l'épisode 0 de notre émission, les présentations du groupe, du projet, des animateurs…<!-- more -->
