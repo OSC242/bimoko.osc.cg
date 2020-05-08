@@ -54,6 +54,9 @@ return [
             'og' => function ($page) {
                 $ogs = [
                     [
+                        'article:author',
+                        'https://adnan.rihan.cg/'
+                    ],[
                         'article:published_time',
                         $page->getDate()->toDateString(),
                     ],

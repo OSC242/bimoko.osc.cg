@@ -26,7 +26,6 @@
         <meta property="og:image" content="{{ $page->baseUrl }}/assets/img/logo.svg" />
         <meta property="og:image:type" content="image/svg+xml" />
 
-
     @foreach (collect($page->og ? $page->og() : [])->mergeRecursive($page->subOg) as $propArray)
         <meta property="og:{{ $propArray[0] }}" content="{{ $propArray[1] }}" />
     @endforeach
