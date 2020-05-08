@@ -12,19 +12,13 @@
         <meta property="og:description" content="{{ $page->description ?? $page->siteDescription }}" />
         <meta property="og:locale" content="{{ $page->locale ?? $page->siteLocale }}" />
 
-    @if ($page->image)
-        <meta property="og:image" content="{{ $page->image }}" />
-    @endif
-        <meta property="og:image" content="{{ $page->baseUrl }}/assets/img/logo-300px.jpg" />
-        <meta property="og:image:width" content="300" />
-        <meta property="og:image:height" content="300" />
-        <meta property="og:image:type" content="image/jpeg" />
-        <meta property="og:image" content="{{ $page->baseUrl }}/assets/img/logo-100px.png" />
-        <meta property="og:image:width" content="100" />
-        <meta property="og:image:height" content="100" />
-        <meta property="og:image:type" content="image/png" />
-        <meta property="og:image" content="{{ $page->baseUrl }}/assets/img/logo.svg" />
-        <meta property="og:image:type" content="image/svg+xml" />
+    @foreach ($page->artworks as $filename => $data)
+        <meta property="og:image" content="{{ $page->baseUrl }}/assets/img/{{ $filename }}" />
+        <meta property="og:image:secure_url" content="https://{{ last(explode('://', $page->baseUrl)) }}/assets/img/{{ $filename }}" />
+        @foreach ($data as $prop => $value)
+        <meta property="og:image:{{ $prop }}" content="{{ $value }}" />
+        @endforeach
+    @endforeach
 
     @foreach (collect($page->og ? $page->og() : [])->mergeRecursive($page->subOg) as $propArray)
         <meta property="og:{{ $propArray[0] }}" content="{{ $propArray[1] }}" />
@@ -74,7 +68,7 @@
             <div class="container flex items-center max-w-8xl mx-auto px-4 lg:px-8">
                 <div class="flex items-center">
                     <a href="/" title="{{ $page->siteName }} home" class="inline-flex items-center">
-                        <img class="h-8 md:h-10 mr-3" src="/assets/img/logo-100px.png" alt="{{ $page->siteName }} logo" />
+                        <img class="h-8 md:h-10 mr-3" src="/assets/img/logo-100.png" alt="{{ $page->siteName }} logo" />
 
                         <h1 class="text-lg md:text-2xl text-blue-800 font-semibold hover:text-blue-600 my-0">{{ $page->siteName }}</h1>
                     </a>

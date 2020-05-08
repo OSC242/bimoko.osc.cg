@@ -12,6 +12,52 @@ return [
     'siteDescription' => "Le podcast congolais qui démystifie l'actualité tech",
     'contactFormEndpoint' => 'https://formspree.io/xrgygbno',
 
+    'artworks' => [
+        'logo-100.png' => [
+            'type' => 'image/png',
+            'height' => 100,
+            'width' => 100,
+        ],
+        'logo-100.jpg' => [
+            'type' => 'image/jpeg',
+            'height' => 100,
+            'width' => 100,
+        ],
+        'logo-300.png' => [
+            'type' => 'image/png',
+            'height' => 300,
+            'width' => 300,
+        ],
+        'logo-300.jpg' => [
+            'type' => 'image/jpeg',
+            'height' => 300,
+            'width' => 300,
+        ],
+        'logo-600.png' => [
+            'type' => 'image/png',
+            'height' => 600,
+            'width' => 600,
+        ],
+        'logo-600.jpg' => [
+            'type' => 'image/jpeg',
+            'height' => 600,
+            'width' => 600,
+        ],
+        'logo-2500.png' => [
+            'type' => 'image/png',
+            'height' => 2500,
+            'width' => 2500,
+        ],
+        'logo-2500.jpg' => [
+            'type' => 'image/jpeg',
+            'height' => 2500,
+            'width' => 2500,
+        ],
+        'logo.svg' => [
+            'type' => 'image/svg+xml',
+        ],
+    ],
+
     'google' => [
         'analyticsId' => 'UA-165831877-1',
     ],
